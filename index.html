@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Mahsulot Katalogi
+        <button id="dark-toggle" class="dark-toggle">🌙 Dark Mode</button>
+    
+    </header>
+    
+    <div class="filters">
+        <select id="category">
+            <option value="all">Barcha Kategoriyalar</option>
+            <option value="men's clothing">men's clothing</option>
+            <option value="jewelery">jewelery</option>
+            <option value="electronics">electronics</option>
+            <option value="women's clothing">women's clothing</option>
+        </select>
+    
+        <select id="sort">
+            <option value="asc">Narx bo'yicha saralash</option>
+            <option value="asc">O'sish tartibida</option>
+            <option value="desc">Kamayish tartibida</option>
+        </select>
+    
+        <input type="text" id="search" placeholder="Mahsulot qidirish...">
+    </div>
+    
+    <div class="loader" id="loader">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="products" id="product-list" style="display: none;"></div>
+    
+    <footer>
+        &copy; 2025 Mahsulotlar katalogi. Barcha huquqlar himoyalangan.
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
